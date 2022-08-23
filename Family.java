@@ -46,8 +46,9 @@ abstract class Family {
         this.averageAge = findAverageAge();
     }
 
-    protected Family(int familySize) {
+    protected Family(int myFamilySize) {
         this.theFamily = new FamilyMemeber[familySize];
+        this.familySize = myFamilySize;
     }
 
 }

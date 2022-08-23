@@ -2,7 +2,7 @@ public class BoyettFamily extends Family {
 
     public BoyettFamily() {
         super(8);
-        this.familySize = 8;
+        //this.familySize = familySize;
         this.theFamily = new FamilyMemeber[8];
         theFamily[0] = new FamilyMemeber("Jason", 26);
         theFamily[7] = new FamilyMemeber("Sharri", 62);
