@@ -1,22 +1,17 @@
-public class BoyettFamily extends Family{
+public class BoyettFamily extends Family {
 
-    private FamilyMemeber jason = new FamilyMemeber("Jason", 26);
-    private FamilyMemeber sharri = new FamilyMemeber("Sharri", 62);
-    private FamilyMemeber zach = new FamilyMemeber("Zach", 21);
-    private FamilyMemeber peanut = new FamilyMemeber("Peanut Butter Boyett", 1);
-    private FamilyMemeber gypsy = new FamilyMemeber("Gypsy", 5);
-    private FamilyMemeber steve = new FamilyMemeber("Steve", 55);
-    private FamilyMemeber nathan = new FamilyMemeber("Nathan", 25);
-    private FamilyMemeber alexis = new FamilyMemeber("Alexis", 26);
+    public BoyettFamily() {
+        super(8);
+        this.familySize = 8;
+        this.theFamily = new FamilyMemeber[8];
+        theFamily[0] = new FamilyMemeber("Jason", 26);
+        theFamily[7] = new FamilyMemeber("Sharri", 62);
+        theFamily[0] = new FamilyMemeber("Zach", 21);
+        theFamily[0] = new FamilyMemeber("Peanut Butter Boyett", 1);
+        theFamily[0] = new FamilyMemeber("Gypsy", 5);
+        theFamily[0] = new FamilyMemeber("Steve", 55);
+        theFamily[0] = new FamilyMemeber("Nathan", 25);
+        theFamily[0] = new FamilyMemeber("Alexis", 26);
+    }
 
-    this.theFamily[0] = jason;
-    this.theFamily[1] = sharri;
-    this.theFamily[2] = zach;
-    this.theFamily[3] = peanut;
-    this.theFamily[4] = gypsy;
-    this.theFamily[5] = steve;
-    this.theFamily[6] = nathan;
-    this.theFamily[7] = alexis;
-
-    public 
 }
