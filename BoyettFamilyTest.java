@@ -35,4 +35,9 @@ public class BoyettFamilyTest {
     public void testAveragAge() {
         assertEquals(27.875, testBoyettFamily.getAverageAge(), 0.5);
     }
+
+    @Test
+    public void testGetAllNames() {
+        assertEquals("Peanut Butter BoyettGypsyZachNathanJasonAlexisSteveSharri", testBoyettFamily.getAllFamilyNames());
+    }
 }

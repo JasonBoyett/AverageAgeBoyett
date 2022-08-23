@@ -7,7 +7,7 @@ public class Main {
 
         String testSize = Integer.toString(myFamily.getFamilySize());
 
-        System.out.println(testSize);
+        System.out.println(myFamily.getAllFamilyNames());
     }
 
 }

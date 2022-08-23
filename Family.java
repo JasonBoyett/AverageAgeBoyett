@@ -49,4 +49,12 @@ abstract class Family {
         this.averageAge = this.getAverageAge();
     }
 
+    public String getAllFamilyNames() {
+        String print = "";
+        for (int i = 0; i < this.familySize; i++) {
+            print = print + this.theFamily[i].getName() + "\n";
+        }
+        return print;
+    }
+
 }
