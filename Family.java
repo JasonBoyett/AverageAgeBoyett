@@ -1,4 +1,4 @@
-public class Family {
+abstract class Family {
     protected String familyName;
     protected int familySize;
     protected FamilyMemeber[] theFamily;
