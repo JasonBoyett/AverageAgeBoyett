@@ -8,17 +8,13 @@ abstract class Family {
         return theFamily;
     }
 
-    private float findAverageAge() {
+    public float getAverageAge() {
         int sum = 0;
 
         for (int i = 0; i < theFamily.length; i++) {
             sum = sum + theFamily[i].getAge();
         }
         return sum / (float) theFamily.length;
-    }
-
-    public float getAverageAge() {
-        return averageAge;
     }
 
     public int getFamilySize() {
@@ -37,18 +33,19 @@ abstract class Family {
         this.familyName = familyName;
         this.familySize = familySize;
         this.theFamily = new FamilyMemeber[familySize];
-        this.averageAge = findAverageAge();
+        this.averageAge = this.getAverageAge();
     }
 
     protected Family(int familySize, FamilyMemeber[] theFamily) {// for a hard coded family
         this.familySize = familySize;
         this.theFamily = theFamily;
-        this.averageAge = findAverageAge();
+        this.averageAge = this.getAverageAge();
     }
 
     protected Family(int myFamilySize) {
         this.theFamily = new FamilyMemeber[familySize];
         this.familySize = myFamilySize;
+        this.averageAge = this.getAverageAge();
     }
 
 }
