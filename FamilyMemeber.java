@@ -1,3 +1,4 @@
+
 public class FamilyMemeber {
     private int age;
     private String name;
@@ -5,6 +6,7 @@ public class FamilyMemeber {
     public int getAge() {
         return age;
     }
+
     public void setAge(int age) {
         this.age = age;
     }
@@ -17,7 +19,7 @@ public class FamilyMemeber {
         this.name = name;
     }
 
-    public FamilyMemeber(String Name , int Age) {
+    public FamilyMemeber(String Name, int Age) {
         this.name = Name;
         this.age = Age;
     }

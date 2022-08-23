@@ -1,3 +1,4 @@
+
 abstract class Family {
     protected String familyName;
     protected int familySize;
