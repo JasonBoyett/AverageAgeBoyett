@@ -1,7 +1,7 @@
 
 public class BoyettFamily extends Family {
 
-    public BoyettFamily() {
+    public BoyettFamily() {//constructor fot the BoyettFamily
         super(8);
         this.theFamily = new FamilyMemeber[8];
         this.familyName = "Boyett";
