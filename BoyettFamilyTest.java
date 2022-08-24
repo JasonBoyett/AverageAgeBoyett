@@ -38,6 +38,6 @@ public class BoyettFamilyTest {
 
     @Test
     public void testGetAllNames() {
-        assertEquals("Peanut Butter BoyettGypsyZachNathanJasonAlexisSteveSharri", testBoyettFamily.getAllFamilyNames());
+        assertEquals("Peanut Butter Boyett\nGypsy\nZach\nNathan\nJason\nAlexis\nSteve\nSharri\n", testBoyettFamily.getAllFamilyNames());
     }
 }
