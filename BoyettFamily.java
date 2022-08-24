@@ -4,6 +4,7 @@ public class BoyettFamily extends Family {
     public BoyettFamily() {
         super(8);
         this.theFamily = new FamilyMemeber[8];
+        this.familyName = "Boyett";
         this.theFamily[4] = new FamilyMemeber("Jason", 26);
         this.theFamily[7] = new FamilyMemeber("Sharri", 62);
         this.theFamily[2] = new FamilyMemeber("Zach", 21);

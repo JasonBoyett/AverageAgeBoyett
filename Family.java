@@ -31,6 +31,10 @@ abstract class Family {
         this.theFamily[position] = memeber;
     }
 
+    public String getFamilyName() {
+        return familyName;
+    }
+
     protected Family(int familySize, String familyName) {// for a user created family
         this.familyName = familyName;
         this.familySize = familySize;
@@ -54,6 +58,14 @@ abstract class Family {
         String print = "";
         for (int i = 0; i < this.familySize; i++) {
             print = print + this.theFamily[i].getName() + "\n";
+        }
+        return print;
+    }
+
+    public String getAllFamilyNamesAndAges() {
+        String print = "";
+        for (int i = 0; i < this.familySize; i++) {
+            print = print + this.theFamily[i].getName() + " is " + this.theFamily[i].getAge() + "\n";
         }
         return print;
     }
