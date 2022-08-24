@@ -3,19 +3,20 @@ abstract class Family {
     protected String familyName;
     protected int familySize;
     protected FamilyMemeber[] theFamily;
-    protected float averageAge;
+    protected double averageAge;
 
     public FamilyMemeber[] getTheFamily() {
         return theFamily;
     }
 
-    public float getAverageAge() {
-        int sum = 0;
+    public double getAverageAge() {
+        double sum = 0;
+        double denominator = (double) (this.familySize);
 
         for (int i = 0; i < theFamily.length; i++) {
             sum = sum + theFamily[i].getAge();
         }
-        return sum / (float) theFamily.length;
+        return sum / denominator;
     }
 
     public int getFamilySize() {
